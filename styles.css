@@ -92,6 +92,7 @@ nav ul li:hover a {
   justify-content: center;
   align-items: center;
   min-height: calc(100vh + 50px);
+  padding: 25px 0px;
   background-color: #f8f5f1;
 }
 
