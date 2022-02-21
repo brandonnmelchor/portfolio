@@ -12,24 +12,18 @@ body {
   font-size: 24px;
 }
 
-.hero-text {
-  font-size: 2.5em;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
 header {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 110%;
-
-  display: flex;
-  justify-content: center;
   height: 75px;
   background-color: #f8a488;
   color: white;
+  box-shadow: 0px 2px 5px #00000033;
 }
 
 nav ul {
@@ -49,12 +43,22 @@ a,
 a:visited,
 a:active {
   color: inherit;
-  text-decoration: none;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease-out;
 }
 
 nav ul li:hover {
   cursor: pointer;
-  text-decoration: underline;
+}
+
+nav ul li:hover a {
+  text-decoration-color: white;
+}
+
+.hero-text {
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 #welcome-section {
@@ -72,6 +76,13 @@ nav ul li:hover {
   color: #5aa897;
 }
 
+.portfolio {
+  font-size: 2.2em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #45526c;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -79,7 +90,6 @@ nav ul li:hover {
   align-items: center;
   min-height: calc(100vh + 50px);
   background-color: #f8f5f1;
-  color: #45526c;
 }
 
 #project-tiles {
@@ -95,15 +105,33 @@ nav ul li:hover {
 
 .project-tile {
   max-width: 450px;
+  box-shadow: 2px 2px 5px #00000040;
+  border-radius: 5px;
 }
 
 img {
   object-fit: contain;
   width: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
 
 figcaption {
   text-align: center;
+  padding: 5px 0px 0px 10px;
+  margin-top: -10px;
+  height: 50px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #5aa897;
+  color: white;
+}
+
+.cap-hover {
+  color: transparent;
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .cap-hover {
+  color: white;
 }
 
 #contact {
