@@ -1,0 +1,252 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+}
+
+#intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  column-gap: 30px;
+  max-width: 1400px;
+  padding: 50px 25px 75px;
+  margin: 100px auto 0;
+}
+
+.intro-header {
+  text-align: right;
+}
+
+.intro-header p {
+  margin-top: 20px;
+}
+
+#intro-media {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 75px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 75px 25px;
+
+  /* prettier-ignore */
+  grid-template-areas:
+  "feature-header feature-header feature-header"
+  "feature1 feature2 feature3";
+}
+
+.feature-header {
+  grid-area: feature-header;
+  justify-self: center;
+  text-align: center;
+}
+
+.feature-header p {
+  max-width: 800px;
+  margin: 25px 0px 50px;
+}
+
+.feature img {
+  width: 100%;
+}
+
+.feature figcaption {
+  margin: 25px 0px 15px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.feature p {
+  text-align: center;
+}
+
+#feature1 {
+  grid-area: feature1;
+}
+
+#feature2 {
+  grid-area: feature2;
+}
+
+#feature3 {
+  grid-area: feature3;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  column-gap: 30px;
+  max-width: 1400px;
+  padding: 75px 25px;
+  margin: auto;
+}
+
+#projects img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.projects-header p {
+  margin-top: 20px;
+}
+
+#sign-up {
+  max-width: 1400px;
+  padding: 75px 25px;
+  margin: auto;
+}
+
+.sign-up-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 30px;
+  min-height: 200px;
+  padding: 0px 25px;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 5px;
+}
+
+.sign-up-header h2 {
+  color: #f9faf8;
+}
+
+.sign-up-header p {
+  margin-top: 10px;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 30px;
+}
+
+#name,
+#email {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #f9faf8;
+  color: #f9faf8;
+  font-size: 1em;
+}
+
+#email {
+  margin-top: 20px;
+}
+
+#name::placeholder,
+#email::placeholder {
+  color: #e5e7eb;
+}
+
+#name:focus,
+#email:focus {
+  outline: none;
+}
+
+#submit {
+  place-self: center end;
+  width: 95%;
+  height: 100%;
+  background: none;
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+  color: #f9faf8;
+  font-size: 1em;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+.footer {
+  max-width: 1400px;
+  padding: 25px 25px;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.footer a,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+  text-decoration: underline;
+}
+
+@media (max-width: 950px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav ul {
+    width: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav ul {
+    width: 300px;
+  }
+
+  #intro {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .intro-header {
+    text-align: left;
+  }
+
+  #features {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+
+    /* prettier-ignore */
+    grid-template-areas:
+  "feature-header"
+  "feature1"
+  "feature2"
+  "feature3";
+  }
+
+  .feature img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .feature figcaption {
+    margin: 15px 0px 15px;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .sign-up-form {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 25px;
+  }
+}
