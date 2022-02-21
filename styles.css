@@ -4,7 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 0.5px solid gray; */
+}
+
+html {
+  min-width: 500px;
 }
 
 body {
@@ -97,8 +100,7 @@ nav ul li:hover a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap: 20px;
-  row-gap: 20px;
+  gap: 20px;
   max-width: 1400px;
   margin-top: 20px;
 }
@@ -175,4 +177,16 @@ footer {
   font-size: 0.67em;
   background-color: #f8f5f1;
   color: #45526c;
+}
+
+@media (max-width: 650px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-text {
+    font-size: 2.25em;
+  }
 }
