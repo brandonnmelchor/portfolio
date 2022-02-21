@@ -47,6 +47,7 @@ a:visited,
 a:active {
   color: inherit;
   text-decoration-color: transparent;
+  text-underline-offset: 5px;
   transition: text-decoration-color 0.3s ease-out;
 }
 
