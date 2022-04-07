@@ -80,7 +80,7 @@ section {
 }
 
 #welcome-section {
-  background-color: #45526c;
+  background-color: #3c465d;
   color: white;
 }
 
@@ -136,7 +136,7 @@ figcaption {
 }
 
 #contact {
-  background-color: #45526c;
+  background-color: #3c465d;
   color: white;
 }
 
@@ -170,7 +170,7 @@ footer {
   height: 75px;
   font-size: 0.67em;
   background-color: #fcfcfc;
-  color: #45526c;
+  color: #3c465d;
 }
 
 @media (max-width: 650px) {
