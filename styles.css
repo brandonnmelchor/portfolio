@@ -8,14 +8,14 @@
 }
 
 html {
-  min-width: 500px;
+  min-width: 300px;
   font-family: "Poppins";
-  font-size: 24px;
+  font-size: 25px;
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0em;
   background: transparent;
 }
 
@@ -23,13 +23,11 @@ header {
   position: fixed;
   display: flex;
   justify-content: center;
-
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-
   width: 100%;
-  height: 75px;
+  height: 3em;
   background-color: #f8a488;
   color: white;
   box-shadow: 0px 2px 5px #00000033;
@@ -37,7 +35,7 @@ header {
 
 nav ul {
   display: flex;
-  width: 500px;
+  width: 20em;
   height: 100%;
 }
 
@@ -53,7 +51,7 @@ a:visited,
 a:active {
   color: inherit;
   text-decoration-color: transparent;
-  text-underline-offset: 5px;
+  text-underline-offset: 0.2em;
   transition: text-decoration-color 0.3s ease-out;
 }
 
@@ -69,6 +67,7 @@ nav ul li:hover a {
   margin-top: auto;
   font-size: 2.5em;
   font-weight: 600;
+  text-align: center;
   letter-spacing: 2px;
 }
 
@@ -90,13 +89,13 @@ section {
 
 .go-down,
 .go-up {
-  line-height: 75px;
+  line-height: 3em;
   margin-top: auto;
   transition: transform 0.3s ease-out;
 }
 
 #projects {
-  padding: 75px 0px 25px;
+  padding: 3em 0 1em;
   color: #45526C;
   background-color: #fcfcfc;
 }
@@ -106,13 +105,13 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  max-width: 1400px;
-  margin-top: 40px;
+  gap: 0.8em;
+  max-width: 56em;
+  margin-top: 1em;
 }
 
 .project-tile {
-  max-width: 450px;
+  max-width: 18em;
   box-shadow: 2px 2px 5px #00000040;
   border-radius: 10px;
 }
@@ -125,9 +124,9 @@ img {
 
 figcaption {
   text-align: center;
-  padding: 5px 0px 0px 10px;
-  margin-top: -10px;
-  line-height: 50px;
+  padding: 0.2em 0em 0em 0.4em;
+  margin-top: 0.4em;
+  line-height: 2em;
   border-radius: 0px 0px 10px 10px;
   background-color: #5aa897;
   color: white;
@@ -143,54 +142,68 @@ figcaption {
 }
 
 #projects .go-down {
-  margin-bottom: -25px;
+  margin-bottom: -1em;
 }
 
 .contact-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 2em;
 }
 
 .contact-button {
   display: block;
-  padding: 0px 30px;
+  padding: 0em 1.2em;
   font-size: 1.25em;
   transition: transform 0.3s ease-out;
 }
 
 .go-down:hover,
 .contact-button:hover {
-  transform: translateY(5px);
+  transform: translateY(0.2em);
 }
 
 .go-up:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.2em);
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75px;
+  height: 3em;
   font-size: 0.67em;
   color: #45526C;
   background-color: #fcfcfc;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   html {
-    zoom: 70%;
+    font-size: 22px;
   }
+}
 
-  body {
+@media (max-width: 600px) {
+  html {
     font-size: 20px;
   }
 }
 
-@media (max-width: 560px) {
-  .hero-text {
-    font-size: 2.25em;
+@media (max-width: 550px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 14px;
   }
 }
