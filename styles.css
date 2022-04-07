@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid gray; */
+  border: 1px solid gray;
 }
 
 html {
@@ -72,6 +72,22 @@ nav ul li:hover a {
   letter-spacing: 2px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #45526C;
+  color: white;
+}
+
+#welcome-section p,
+#contact p {
+  font-style: italic;
+  color: #5aa897;
+}
+
 .go-down,
 .go-up {
   line-height: 75px;
@@ -79,26 +95,9 @@ nav ul li:hover a {
   transition: transform 0.3s ease-out;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-#welcome-section {
-  background-color: #45526C;
-  color: white;
-}
-
-#welcome-section p {
-  font-style: italic;
-  color: #5aa897;
-}
-
 #projects {
   padding: 75px 0px 25px;
+  color: #45526C;
   background-color: #fcfcfc;
 }
 
@@ -115,46 +114,36 @@ section {
 .project-tile {
   max-width: 450px;
   box-shadow: 2px 2px 5px #00000040;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 img {
   object-fit: contain;
   width: 100%;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 figcaption {
   text-align: center;
   padding: 5px 0px 0px 10px;
   margin-top: -10px;
-  height: 50px;
-  border-radius: 0px 0px 5px 5px;
+  line-height: 50px;
+  border-radius: 0px 0px 10px 10px;
   background-color: #5aa897;
   color: white;
 }
 
-.cap-hover {
+.hover-deco {
   color: transparent;
   transition: color 0.3s ease-out;
 }
 
-.project-tile:hover .cap-hover {
+.project-tile:hover .hover-deco {
   color: white;
 }
 
 #projects .go-down {
   margin-bottom: -25px;
-}
-
-#contact {
-  background-color: #45526C;
-  color: white;
-}
-
-#contact p {
-  font-style: italic;
-  color: #5aa897;
 }
 
 .contact-links {
@@ -186,8 +175,8 @@ footer {
   align-items: center;
   height: 75px;
   font-size: 0.67em;
-  background-color: #fcfcfc;
   color: #45526C;
+  background-color: #fcfcfc;
 }
 
 @media (max-width: 650px) {
