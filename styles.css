@@ -30,7 +30,7 @@ header {
   height: 3em;
   background-color: #f8a488;
   color: white;
-  box-shadow: 0px 2px 5px #00000033;
+  box-shadow: 0px 2px 5px #45526C40;
 }
 
 nav ul {
@@ -112,8 +112,13 @@ section {
 
 .project-tile {
   max-width: 18em;
-  box-shadow: 2px 2px 5px #00000040;
+  box-shadow: 1px 1px 5px #45526C40;
   border-radius: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.project-tile:hover {
+  transform: scale(1.02);
 }
 
 img {
